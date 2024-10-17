@@ -40,7 +40,17 @@ To use the QRNG API, you need to obtain an API key from [ANU Quantum Random Numb
 cd("path/to/your/project")
 ```
 
-4. Run the script:
+4. Activate the project environment:
+
+```julia
+using Pkg
+Pkg.activate(".")
+Pkg.instantiate()
+```
+
+This command activates the local project environment and installs any dependencies specified in the `Project.toml` and `Manifest.toml` files.
+
+5. Run the script:
 
 ```julia
 julia --project=. main.jl
