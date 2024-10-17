@@ -43,7 +43,7 @@ cd("path/to/your/project")
 4. Run the script:
 
 ```julia
-julia main.jl
+julia --project=. main.jl
 ```
 
 The script will output a hexagram number between 1 and 64 along with a link to the corresponding hexagram's details.
